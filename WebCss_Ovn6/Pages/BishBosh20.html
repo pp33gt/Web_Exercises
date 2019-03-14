@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BishBosh 2.0</title>
+    <link href="../Styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Bish-Bosh 2.0</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a class="navlink" href="../Pages/Index.html">Index</a></li>
+                <li><a class="navlink" href="../Pages/BishBosh.html">Bish-Bosh</a></li>
+                <li><a class="navlink" href="../Pages/BishBosh20.html">Bish-Bosh 2.0</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Övning 8: Web - Front-end och JavaScript:</h1>
+        <p>
+            Bish-Bosh ​med ett visuellt gränssnitt och presentation på en HTML-sida.
+            Tar två Divisorer:
+        </p>
+        <br />
+        Ange första divisor för Bish:<input id="txtBish" type="text" value="3" /><br />
+        Ange andra divisor Bosh:<input id="txtBosh" type="text" value="4" /><br />
+        Hur många iterationer:<input id="txtNumIterations" type="text" value="100" /><br />
+        <br />
+        <input type="button" onclick="bishBosh();" value="Exekvera" />
+        <section>
+            Resultat:
+            <p id="resOutput">
+            </p>
+        </section>
+    </section>
+    <footer>
+        <h1>&copy; Mr. X</h1>
+    </footer>
+    <script src="../Scripts/BishBosh.js"></script>
+    <script>
+        /*
+         Bish-Bosh listar alla tal mellan 1 och 100, 
+         men vissa undantag: 
+         Om talet är jämnt delbart med 3 listas ​‘Bish’ ​istället ​för talet. 
+         Om talet är jämnt delbart med 4 listas ‘​Bosh’ istället ​för  talet. 
+         Om talet är jämnt delbart med både med 3 och 4 skrivs “​Bish-Bosh ​ ” ​istället ​för talet.    
+         Exempel:  1, 2, ​Bish ​ , ​Bosh ​ , 5, ​Bish ​ , 7, ​Bosh ​ , ​Bish ​ , 10, 11, ​Bish-Bosh ​ , 13, 14, ​Bish ​ [...]
+         */
+
+        //bishBosh();
+
+    </script>
+</body>
+</html>

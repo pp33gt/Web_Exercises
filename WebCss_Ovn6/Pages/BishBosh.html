@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a class="navlink" href="../Pages/Index.html">Index</a></li>
+                <li><a class="navlink" href="../Pages/BishBosh.html">Bish-Bosh</a></li>
+                <li><a class="navlink" href="../Pages/BishBosh20.html">Bish-Bosh 2.0</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        /*
+         Bish-Bosh listar alla tal mellan 1 och 100, 
+         men vissa undantag: 
+         Om talet är jämnt delbart med 3 listas ​‘Bish’ ​istället ​för talet. 
+         Om talet är jämnt delbart med 4 listas ‘​Bosh’ istället ​för  talet. 
+         Om talet är jämnt delbart med både med 3 och 4 skrivs “​Bish-Bosh ​ ” ​istället ​för talet.    
+         Exempel:  1, 2, ​Bish ​ , ​Bosh ​ , 5, ​Bish ​ , 7, ​Bosh ​ , ​Bish ​ , 10, 11, ​Bish-Bosh ​ , 13, 14, ​Bish ​ [...]
+         */
+
+        var bishBosh = function() {
+            console.debug('Start: Bish-Bosh ');
+
+            var n = 100;
+            for (var i = 1; i <= n; i++) {
+
+                var isBish = false;
+                var isBosh = false;
+
+                if (i % 3 === 0) isBish = true;
+                if (i % 4 === 0) isBosh = true;
+
+                if (isBish && isBosh) {
+                    console.debug('Bish-Bosh');
+                    continue;
+                }
+                else if (isBish) {
+                    console.debug('Bish');
+                    continue;
+                }
+                else if (isBosh) {
+                    console.debug('Bosh');
+                    continue;
+                }
+                console.debug(i);
+            }
+        }
+
+        bishBosh();
+
+    </script>
+</body>
+</html>

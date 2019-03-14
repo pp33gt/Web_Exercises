@@ -1,0 +1,83 @@
+﻿body {
+    background-color: black;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-style: normal;
+    color: burlywood;
+}
+
+.navigation ul {
+    list-style-type: none; /* tar bort punkt */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.navigation li {
+    float: left;
+}
+
+    .navigation li a {
+        display: block; /* ger högre höjd */
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+        .navigation li a:hover {
+            background-color: #111111;
+        }
+
+/*.right {
+    margin-left: auto;
+    
+    margin-right: 0;
+
+    margin-right: auto;
+}*/
+
+.center {
+    text-align: center;
+}
+
+.movietitle {
+    text-align: center;
+    text-shadow: 5px 5px 5px #808080;
+}
+
+.video {
+    width: 610px;
+    height: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.relatedlinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.relatedlinks li {
+    float: left;
+}
+
+    .relatedlinks li a {
+        display: block;
+        color: gold;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+        .relatedlinks li a:hover {
+            background-color: #111111;
+        }
+
+.footer {
+    height: 50px;
+    background-color: #333333;
+}
